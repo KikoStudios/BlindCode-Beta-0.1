@@ -1,0 +1,20 @@
+
+tabview = ctk.CTk()
+tabview.title("Bsic Tabs")
+tabview.geometry("600x400")
+tabview.resizable(False, False)
+
+tabframe = ctk.CTkFrame(tabview, width=600, height=400)
+tabframe.pack(padx=20, pady=20)
+
+BTlabel = ctk.CTkLabel(tabframe, text="Basic Tabs", font=("Arial", 20))
+BTlabel.pack(pady=20)
+
+Tabs = ctk.CTkTabview(tabframe)
+Tabs.pack(pady=20,padx=10)
+
+tab1 = Tabs.add("Tab 1")
+
+tab2 = Tabs.add("Tab 2")
+
+tabview.mainloop()

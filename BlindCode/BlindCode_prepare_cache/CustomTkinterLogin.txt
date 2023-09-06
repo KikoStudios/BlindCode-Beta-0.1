@@ -1,0 +1,25 @@
+
+login = ctk.CTk()
+
+login.title("your_name Login")
+login.geometry("400x600")
+login.resizable(False, False)
+
+Login_frame = ctk.CTkFrame(login, width=400, height=600)
+Login_frame.pack(padx=20, pady=20)
+
+Login_label = ctk.CTkLabel(Login_frame, text="Login", font=("Arial", 20)).pack(pady=20)
+
+Login_entry_name = ctk.CTkEntry(Login_frame, placeholder_text="Username", width=250, height=40)
+Login_entry_name.pack(pady=20)
+
+Login_entry_password = ctk.CTkEntry(Login_frame, placeholder_text="Password", width=250, height=40)
+Login_entry_password.pack(pady=13)
+
+Login_button = ctk.CTkButton(Login_frame, text="Login", command=login_button)
+Login_button.pack(pady=18)
+
+
+
+
+login.mainloop()

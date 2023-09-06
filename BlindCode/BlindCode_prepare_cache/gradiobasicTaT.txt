@@ -1,0 +1,6 @@
+def colntrol_variable():
+    pass
+
+demo = gr.interface(colntrol_variable,[text],[text])
+
+demo.launch(share = True)
