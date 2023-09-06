@@ -14,6 +14,8 @@ app.resizable(False, False)
 
 def pyblindit():
     print("BlindCode is running")
+    os.chdir(r"C:\Users\kryst\Documents\BlindCode")
+    os.mkdir("BindCode Outputs")
     os.chdir(r"C:\Users\kryst\Documents\BlindCode Outputs")
     os.mkdir(pyentry.get())
     os.chdir(pyentry.get())
